@@ -142,3 +142,103 @@
 #         print('too high')
 #     elif n<s:
 #         print('too low')
+
+# Project 8: Even Numbers Counter
+# Topics: while loop, modulo operator (%), conditionals
+# Ask the user for two positive integers: start and end (start ≤ end). Print all even numbers between them (inclusive) and count how many there are. If start > end, swap them.
+
+# s=int(input('enter start:'))
+# e=int(input('enter end:'))
+# if s>e:
+#     s,e=e,s
+# current=s
+
+# while current<=e:
+#     if current%2==0:
+#         print(current,end=' ')
+#     current+=1
+
+# Project 9: Reverse a Number (Using Modulo)
+# Topics: while loop, modulo, integer division
+# Ask the user for a positive integer. Reverse its digits using arithmetic (not string). For example, 12345 becomes 54321.
+
+# n=int(input('enter a num :'))
+# reversed=0
+# org=n
+# while org>0:
+#     digit=org%10
+#     reversed=reversed*10+digit
+#     org=org//10
+# print(reversed)
+
+# Project 10: Count Multiples of 3 and 5
+# Topics: while loop, modulo, counters
+# Ask the user for a positive integer n. Count how many numbers from 1 to n are divisible by 3, how many divisible by 5, and how many divisible by both 3 and 5. Use a single while loop.
+
+# n=int(input('num:'))
+# c1=0
+# c2=0
+# c3=0
+# i=1
+# while i<=n:
+#     if i%3==0:
+#         c1+=1
+        
+#     if i%5==0:
+        
+#         c2+=1
+#     if i%3==0 and i%5==0:
+        
+#         c3+=1
+#     i+=1
+# print('count of no divisible by 3:',c1)
+# print('count of no divisible by 5:',c2)
+# print('count of no divisible by both:',c3)
+        
+# Project 8: Fibonacci Sequence Up to N Terms
+# Topics: while loop, arithmetic, swapping
+# Ask the user for the number of terms n. Print the first n terms of the Fibonacci sequence (starting with 0, 1). Use a while loop.
+
+# n=int(input('num:'))
+# a=0
+# b=1
+# c=0
+# while c<n:
+#     print(a,end=' ')
+#     a,b=b,a+b
+#     c+=1
+
+# Project 11: Extract Digits and Build a New Number (Even digits only)
+# Topics: while loop, modulo, integer division
+# Ask the user for a positive integer. Create a new number consisting only of the even digits of the original, preserving order. For example, 123456 → 246. If no even digits, print 0.
+
+# n=int(input('num:'))
+# even=[]
+# while n>0:
+#     digit=n%10
+#     if digit%2==0:
+#         even.append(digit)
+#     n=n//10
+# even.reverse()
+# new_num=0
+# for digits in even:
+#     new_num=new_num*10+digits
+# print('new number :',new_num)
+
+# Project 12: LCM of Two Numbers (Without Euclidean algorithm)
+# Topics: while loop, modulo, arithmetic
+# Ask the user for two positive integers. Find the Least Common Multiple (LCM) by checking multiples of the larger number.
+    
+# a=int(input('number 1:'))    
+# b=int(input('number 2:'))    
+# lcm=max(a,b)
+# while True:
+#     if lcm%a==0 and lcm%b==0:
+#         print('Lcm:',lcm)
+#         break
+#     else:
+#         lcm=lcm+max(a,b)
+    
+
+
+
